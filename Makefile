@@ -38,3 +38,6 @@ install:
 
 run:
 	python schedule_manager.py
+
+connect:
+    mycli -h localhost -P 3307 -u root -p 1234 schedule_db
