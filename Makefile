@@ -32,12 +32,13 @@ clean:
 	docker-compose down -v
 	docker system prune -f
 
-# Python 관련 명령어
+# setup.py 등록 명령어
 install:
 	pip install -e .
 
 run:
-	python schedule_manager.py
+	python3 schedule_manager.py
+	# python schedule_manager.py
 
 connect:
     mycli -h localhost -P 3307 -u root -p 1234 schedule_db
